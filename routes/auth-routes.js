@@ -30,6 +30,7 @@ authRoutes.post("/signup", (req, res, next) => {
         });
         return;
       }
+      
       User.findOne({ "username": username })
       .then(user => {
         console.log('user', user);
