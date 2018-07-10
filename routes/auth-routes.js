@@ -55,6 +55,7 @@ authRoutes.post("/signup", (req, res, next) => {
         res.redirect("/");
       });
   });
+  
 });
 
 module.exports = authRoutes;
